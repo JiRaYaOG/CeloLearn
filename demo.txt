@@ -1,2 +1,15 @@
 Beginner: How do I create a Celo wallet?
-AI Tutor: Here is a step-by-step guide for beginners...
+AI Tutor: Here is a step-by-step guide for beginners to create a secure Celo wallet:
+1. Download the Celo Wallet app or use a web wallet.
+2. Follow the on-screen instructions to create your wallet.
+3. Securely save your recovery phrase.
+4. Test sending a small amount of Celo tokens.
+
+Beginner: What is a stablecoin on Celo?
+AI Tutor: A stablecoin is a type of cryptocurrency that maintains a stable value, often pegged to a currency like the USD. Examples on Celo include cUSD and cEUR.
+
+Beginner: How can I learn about smart contracts on Celo?
+AI Tutor: Smart contracts are self-executing programs on the blockchain. On Celo, you can start with simple contracts to send or swap tokens without intermediaries.
+
+Beginner: How can AI help me learn Celo?
+AI Tutor: AI can generate interactive tutorials, quizzes, step-by-step guides, and simulate conversations to help beginners understand Celo concepts easily.

@@ -1,2 +1,29 @@
-1. What is a stablecoin on Celo? A) Fluctuating B) Stable C) Smart contract
+1. What is a stablecoin on Celo?
+A) A token with fluctuating value
+B) A token with stable value
+C) A smart contract
 Answer: B
+
+2. What is the first step to create a Celo wallet?
+A) Send tokens
+B) Download the Celo Wallet app
+C) Learn Solidity
+Answer: B
+
+3. Which stablecoins exist on Celo?
+A) cUSD and cEUR
+B) Bitcoin only
+C) ETH and BTC
+Answer: A
+
+4. What is a smart contract?
+A) A self-executing program on the blockchain
+B) A physical contract
+C) A type of wallet
+Answer: A
+
+5. How can AI help beginners on CeloLearn?
+A) Generate interactive guides and tutorials
+B) Mine crypto
+C) Trade automatically
+Answer: A
