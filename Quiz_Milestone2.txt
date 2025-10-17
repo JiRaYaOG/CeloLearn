@@ -1,0 +1,12 @@
+CeloLearn Quiz – Milestone 2
+
+1. What is CELO used for? → Governance & staking
+2. What are cUSD and cEUR? → Stablecoins on the Celo network
+3. What is the testnet name for Celo? → Alfajores
+4. Which tool can be used to deploy smart contracts on Celo? → Remix
+5. What ensures price stability for cUSD? → Algorithmic collateralization
+6. What’s the main advantage of stablecoins? → Reduced volatility
+7. What language is commonly used for smart contracts on Celo? → Solidity
+8. Where can you explore transactions? → Celo Explorer
+9. How can you store CELO tokens securely? → In a Celo-compatible wallet
+10. What powers decentralized apps on Celo? → Smart contracts
