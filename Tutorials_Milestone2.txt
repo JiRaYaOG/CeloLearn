@@ -1,0 +1,16 @@
+CeloLearn Tutorials – Milestone 2
+
+1️⃣ Understanding the Celo Wallet
+- What is a Celo Wallet?
+- How to create one?
+- How to receive and send CELO?
+
+2️⃣ Stablecoins on Celo
+- What are cUSD and cEUR?
+- Why stablecoins matter?
+- How to use them in DeFi apps?
+
+3️⃣ Simple Smart Contract on Celo
+- What is a smart contract?
+- Deploying a basic contract using Remix.
+- Testing it on the Alfajores testnet.
