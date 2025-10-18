@@ -1,0 +1,41 @@
+CeloLearn Quiz Answers – Milestone 3
+
+1. What is CELO primarily used for?
+Answer: A) Governance and staking
+Explanation: CELO is used for network governance and staking to secure the network.
+
+2. What are cUSD and cEUR?
+Answer: B) Stablecoins on the Celo network
+Explanation: Both are stablecoins pegged to USD and EUR to reduce volatility.
+
+3. What is the name of Celo's widely-used testnet?
+Answer: B) Alfajores
+Explanation: Alfajores is the main Celo testnet used for development and testing.
+
+4. Which tool can be used to compile and deploy smart contracts for Celo?
+Answer: B) Remix
+Explanation: Remix is an Ethereum-compatible IDE commonly used to deploy Solidity contracts.
+
+5. What is the main advantage of stablecoins?
+Answer: B) Reduced price volatility
+Explanation: Stablecoins maintain a stable value relative to a fiat currency.
+
+6. Which language is commonly used for smart contracts on Celo?
+Answer: B) Solidity
+Explanation: Solidity is the standard language for Ethereum-compatible smart contracts.
+
+7. Where can you explore transactions on Celo?
+Answer: A) Celo Explorer
+Explanation: Celo Explorer displays transactions, blocks, and addresses.
+
+8. How can you store CELO tokens securely?
+Answer: A) In a Celo-compatible wallet with a saved recovery phrase
+Explanation: Use a secure wallet and keep recovery phrases offline.
+
+9. How can you obtain testnet CELO for development?
+Answer: B) From a faucet for the testnet
+Explanation: Testnet faucets distribute test CELO for development.
+
+10. What powers decentralized apps on Celo?
+Answer: B) Smart contracts on the blockchain
+Explanation: dApps run on smart contracts deployed on the blockchain.
