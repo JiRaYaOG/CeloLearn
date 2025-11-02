@@ -1,4 +1,0 @@
-git add -u
-git commit -m "Delete old docs file"
-git push origin main
-
