@@ -14,10 +14,18 @@ const tutorials = [
   "Tutorial 3: Deploying Smart Contracts on Celo"
 ];
 
+let tutorialsVisible = false;
+
 function showTutorials() {
   const container = document.getElementById("tutorials");
-  container.innerHTML = ""; // reset
 
+  if (tutorialsVisible) {
+    container.innerHTML = ""; // reset
+    tutorialsVisible = false;
+    return;
+  }
+
+  container.innerHTML = "";
   tutorials.forEach((tut, index) => {
     const div = document.createElement("div");
     div.style.marginBottom = "10px";
@@ -27,10 +35,9 @@ function showTutorials() {
 
     const content = document.createElement("p");
     content.innerText = tut;
-    content.style.display = "none"; // caché par défaut
+    content.style.display = "none";
     content.style.marginLeft = "15px";
 
-    // Toggle display fiable
     btn.addEventListener("click", () => {
       content.style.display = content.style.display === "none" ? "block" : "none";
     });
@@ -39,6 +46,8 @@ function showTutorials() {
     div.appendChild(content);
     container.appendChild(div);
   });
+
+  tutorialsVisible = true;
 }
 
 // ===== Quiz =====
@@ -48,10 +57,18 @@ const quiz = [
   { question: "How do you deploy a smart contract on Celo?", answer: "Using the Celo CLI or Remix IDE" }
 ];
 
+let quizVisible = false;
+
 function showQuiz() {
   const container = document.getElementById("quiz");
-  container.innerHTML = ""; // reset
 
+  if (quizVisible) {
+    container.innerHTML = ""; // reset
+    quizVisible = false;
+    return;
+  }
+
+  container.innerHTML = "";
   quiz.forEach((q, index) => {
     const div = document.createElement("div");
     div.style.marginBottom = "10px";
@@ -68,7 +85,6 @@ function showQuiz() {
     answer.style.display = "none";
     answer.style.marginLeft = "15px";
 
-    // Toggle display fiable
     btn.addEventListener("click", () => {
       answer.style.display = answer.style.display === "none" ? "block" : "none";
     });
@@ -78,4 +94,6 @@ function showQuiz() {
     div.appendChild(answer);
     container.appendChild(div);
   });
+
+  quizVisible = true;
 }
