@@ -1,4 +1,4 @@
-// Wallet
+// ===== Wallet =====
 function showWallet() {
   document.getElementById("wallet").innerText = "Test Wallet: 0x1234...ABCD";
 }
@@ -7,7 +7,7 @@ function simulateTransaction() {
   document.getElementById("transaction").innerText = "Transaction simulated: 10 cUSD sent!";
 }
 
-// Tutoriels
+// ===== Tutoriels =====
 const tutorials = [
   "Tutorial 1: How to create and manage a Celo Wallet",
   "Tutorial 2: Understanding Stablecoins on Celo",
@@ -18,13 +18,28 @@ function showTutorials() {
   const container = document.getElementById("tutorials");
   container.innerHTML = ""; // reset
   tutorials.forEach((tut, index) => {
-    const p = document.createElement("p");
-    p.innerText = `${index + 1}. ${tut}`;
-    container.appendChild(p);
+    const div = document.createElement("div");
+    div.style.marginBottom = "10px";
+
+    const btn = document.createElement("button");
+    btn.innerText = `Tutorial ${index + 1}`;
+    btn.onclick = () => {
+      const content = div.querySelector("p");
+      content.style.display = content.style.display === "none" ? "block" : "none";
+    };
+
+    const content = document.createElement("p");
+    content.innerText = tut;
+    content.style.display = "none"; // caché par défaut
+    content.style.marginLeft = "15px";
+
+    div.appendChild(btn);
+    div.appendChild(content);
+    container.appendChild(div);
   });
 }
 
-// Quiz
+// ===== Quiz =====
 const quiz = [
   { question: "What is Celo?", answer: "A blockchain platform focused on mobile users" },
   { question: "What is cUSD?", answer: "Celo Dollar stablecoin" },
@@ -33,11 +48,30 @@ const quiz = [
 
 function showQuiz() {
   const container = document.getElementById("quiz");
-  container.innerHTML = "";
+  container.innerHTML = ""; // reset
   quiz.forEach((q, index) => {
     const div = document.createElement("div");
-    div.innerHTML = `<p>${index + 1}. ${q.question}</p>
-                     <p><em>Answer: ${q.answer}</em></p>`;
+    div.style.marginBottom = "10px";
+
+    const question = document.createElement("p");
+    question.innerText = `${index + 1}. ${q.question}`;
+    question.style.fontWeight = "bold";
+
+    const btn = document.createElement("button");
+    btn.innerText = "Show Answer";
+
+    const answer = document.createElement("p");
+    answer.innerText = q.answer;
+    answer.style.display = "none";
+    answer.style.marginLeft = "15px";
+
+    btn.onclick = () => {
+      answer.style.display = answer.style.display === "none" ? "block" : "none";
+    };
+
+    div.appendChild(question);
+    div.appendChild(btn);
+    div.appendChild(answer);
     container.appendChild(div);
   });
 }
