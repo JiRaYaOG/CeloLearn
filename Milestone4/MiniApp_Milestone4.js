@@ -17,21 +17,23 @@ const tutorials = [
 function showTutorials() {
   const container = document.getElementById("tutorials");
   container.innerHTML = ""; // reset
+
   tutorials.forEach((tut, index) => {
     const div = document.createElement("div");
     div.style.marginBottom = "10px";
 
     const btn = document.createElement("button");
     btn.innerText = `Tutorial ${index + 1}`;
-    btn.onclick = () => {
-      const content = div.querySelector("p");
-      content.style.display = content.style.display === "none" ? "block" : "none";
-    };
 
     const content = document.createElement("p");
     content.innerText = tut;
     content.style.display = "none"; // caché par défaut
     content.style.marginLeft = "15px";
+
+    // Toggle display fiable
+    btn.addEventListener("click", () => {
+      content.style.display = content.style.display === "none" ? "block" : "none";
+    });
 
     div.appendChild(btn);
     div.appendChild(content);
@@ -49,6 +51,7 @@ const quiz = [
 function showQuiz() {
   const container = document.getElementById("quiz");
   container.innerHTML = ""; // reset
+
   quiz.forEach((q, index) => {
     const div = document.createElement("div");
     div.style.marginBottom = "10px";
@@ -65,9 +68,10 @@ function showQuiz() {
     answer.style.display = "none";
     answer.style.marginLeft = "15px";
 
-    btn.onclick = () => {
+    // Toggle display fiable
+    btn.addEventListener("click", () => {
       answer.style.display = answer.style.display === "none" ? "block" : "none";
-    };
+    });
 
     div.appendChild(question);
     div.appendChild(btn);
