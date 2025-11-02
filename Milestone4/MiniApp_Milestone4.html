@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CeloLearn Mini App</title>
+  <style>
+    /* Fond jaune et noir style Celo */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #FFDD00, #000000);
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0,0,0,0.8); /* fond noir semi-transparent */
+      padding: 30px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      color: #FFDD00; /* texte jaune */
+    }
+
+    h1 {
+      color: #FFDD00;
+      margin-bottom: 25px;
+      font-size: 2em;
+    }
+
+    button {
+      background-color: #FFDD00;
+      color: #000000;
+      border: none;
+      padding: 12px 25px;
+      margin: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #e6cc00;
+      transform: scale(1.05);
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CeloLearn Mini App Demo</h1>
+    <button onclick="showWallet()">Show Test Wallet</button>
+    <p id="wallet"></p>
+
+    <button onclick="simulateTransaction()">Simulate Transaction</button>
+    <p id="transaction"></p>
+  </div>
+
+  <script src="MiniApp_Milestone4.js"></script>
+</body>
+</html>
